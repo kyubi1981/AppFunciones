@@ -1,14 +1,10 @@
 
-function pintar() {
-    ele.style.backgroundColor = 'yellow'
+function pintar_color() {
+    //alert("pintando...");
+    const ele = document.getElementById("elemento");
+    ele.style.backgroundColor = "yellow";
+    ele.addEventListener("click", pintar_color);
 }
 
-const ele = document.getElementById("ele1");
-ele.addEventListener("click", pintar);
 
-
-const brush = function(color){
-    fondo = document.querySelector("body")
-    fondo.style.backgroundColor = color
-}
 
